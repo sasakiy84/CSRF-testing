@@ -1,0 +1,17 @@
+{
+  "name": "CSRF-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.29.0",
+    "fastify-static": "^4.7.0"
+  }
+}
