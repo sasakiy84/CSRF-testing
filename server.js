@@ -1,5 +1,5 @@
 import fastify from "fastify";
-import fastifyStatic from "fastify-static";
+import fastifyStatic from "@fastify/static";
 import fastifyFormbody from "fastify-formbody";
 import fastifyCookie from "@fastify/cookie";
 import fastifyCors from "@fastify/cors";
